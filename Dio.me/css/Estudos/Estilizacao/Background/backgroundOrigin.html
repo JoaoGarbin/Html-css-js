@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      .exemplo {
+        width: 200px;
+        height: 100px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIRGiEbqxSugnIfPxQmM__08Kfj-lTULYFg&s");
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: 15px dashed red;
+        padding: 30px;
+      }
+
+      #padding-box {
+        background-origin: padding-box;
+      }
+      #border-box {
+        background-origin: border-box;
+      }
+      #content-box {
+        background-origin: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade <code>background-origin</code></h1>
+
+    <code>background-origin: padding-box;</code> (padrão)
+
+    <div id="padding-box" class="exemplo"></div>
+
+    <code>background-origin: border-box;</code> (padrão)
+
+    <div id="border-box" class="exemplo"></div>
+
+    <code>background-origin: content-box;</code> (padrão)
+
+    <div id="content-box" class="exemplo"></div>
+  </body>
+</html>

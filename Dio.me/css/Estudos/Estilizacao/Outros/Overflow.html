@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .exemplo {
+      background-color: orange;
+      border: 3px solid purple;
+      padding: 10px;
+      width: 200px;
+      height: 200px;
+    }
+    #hidden {
+      overflow: hidden;
+    }
+    #scroll {
+      overflow: scroll;
+    }
+    #auto {
+      overflow: auto;
+    }
+    #overflow {
+      white-space: nowrap;
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+  </style>
+  <body>
+    <h2>Propriedade <code>overflow</code></h2>
+    <p>Controla como o conteúdo deve ser exibido</p>
+
+    <i>Exemplo:</i> <br /><br /><br />
+
+    <code>overflow: visibe;</code>
+
+    <div class="exemplo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, dolorem
+        magni, consequatur esse cumque exercitationem illum eius rem debitis
+        inventore repellat cupiditate, alias hic accusamus! Quis, maxime? Odio,
+        suscipit molestias.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        repellendus nostrum ad qui nesciunt expedita voluptatum molestiae alias
+        temporibus. Ipsam ea reprehenderit quo deserunt! Sapiente, soluta non?
+        Tenetur, natus laboriosam.
+      </p>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <code>overflow: hidden;</code>
+    <div id="hidden" class="exemplo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, dolorem
+        magni, consequatur esse cumque exercitationem illum eius rem debitis
+        inventore repellat cupiditate, alias hic accusamus! Quis, maxime? Odio,
+        suscipit molestias.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        repellendus nostrum ad qui nesciunt expedita voluptatum molestiae alias
+        temporibus. Ipsam ea reprehenderit quo deserunt! Sapiente, soluta non?
+        Tenetur, natus laboriosam.
+      </p>
+    </div>
+
+    <br /><br /><br />
+
+    <code>overflow: scroll;</code>
+    <div id="scroll" class="exemplo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, dolorem
+        magni, consequatur esse cumque exercitationem illum eius rem debitis
+        inventore repellat cupiditate, alias hic accusamus! Quis, maxime? Odio,
+        suscipit molestias.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        repellendus nostrum ad qui nesciunt expedita voluptatum molestiae alias
+        temporibus. Ipsam ea reprehenderit quo deserunt! Sapiente, soluta non?
+        Tenetur, natus laboriosam.
+      </p>
+    </div>
+    <br /><br /><br />
+
+    <code>overflow: auto;</code>
+    <div id="auto" class="exemplo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, dolorem
+        magni, consequatur esse cumque exercitationem illum eius rem debitis
+        inventore repellat cupiditate, alias hic accusamus! Quis, maxime? Odio,
+        suscipit molestias.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        repellendus nostrum ad qui nesciunt expedita voluptatum molestiae alias
+        temporibus. Ipsam ea reprehenderit quo deserunt! Sapiente, soluta non?
+        Tenetur, natus laboriosam.
+      </p>
+    </div>
+    <br /><br /><br />
+
+    <code>overflow-x e overflow-y;</code>
+    <div id="overflow" class="exemplo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, dolorem
+        magni, consequatur esse cumque exercitationem illum eius rem debitis
+        inventore repellat cupiditate, alias hic accusamus! Quis, maxime? Odio,
+        suscipit molestias.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        repellendus nostrum ad qui nesciunt expedita voluptatum molestiae alias
+        temporibus. Ipsam ea reprehenderit quo deserunt! Sapiente, soluta non?
+        Tenetur, natus laboriosam.
+      </p>
+    </div>
+  </body>
+</html>

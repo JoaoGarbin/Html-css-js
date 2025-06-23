@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /*Da pra misturar todos os seletores*/
+      .texto,
+      div {
+        color: red;
+      }
+      /*tem que so do tipo p e com class texto*/
+      p.texto {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="texto">Agrupamento de Seletores</h1>
+      <p class="texto">
+        podemos aplicar as mesmas regras CSS para vários seletores diferentes.
+        Para isso, podemos separar os seletores utilizado uma vírgula(,).
+      </p>
+      <div>
+        Assim, não precisamos ficar copiando e colando os mesmos códigos para
+        todos, nós podemos fazer um só bloco de CSS e reutilizar as mesmas
+        regras!
+      </div>
+
+      <br /><br />
+      <a id="link-referencia" href="#">Clique para ver a documentação</a>
+      <br /><br />
+      <a id="link-suporte" href="#">Clique para entrar em contato</a>
+      <br /><br />
+      <a id="botao-voltar" href="#">Voltar</a>
+      <br /><br />
+      <button id="botao-fechar">Fechar Página</button>
+    </div>
+  </body>
+</html>

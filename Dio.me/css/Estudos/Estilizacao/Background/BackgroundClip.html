@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .exemplo {
+        width: 200px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: aqua;
+        color: white;
+        font-size: 40px;
+        font-weight: 900;
+        border: 15px dashed red;
+        padding: 30px;
+
+        background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+          linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+          linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+          linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+          linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+          linear-gradient(
+            #1d1d1d 25%,
+            #1a1a1a 25%,
+            #1a1a1a 50%,
+            transparent 50%,
+            transparent 75%,
+            #242424 75%,
+            #242424
+          );
+        background-color: #131313;
+        background-size: 20px 20px;
+      }
+
+      #padding-box {
+        background-clip: padding-box;
+      }
+      #border-box {
+        background-clip: border-box;
+      }
+      #content-box {
+        background-clip: content-box;
+      }
+      #text {
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade <code>background-origin</code></h1>
+
+    <code>background-origin: padding-box;</code> (padrão)
+
+    <div id="padding-box" class="exemplo">TRILHA DE CSS</div>
+
+    <code>background-origin: border-box;</code> (padrão)
+
+    <div id="border-box" class="exemplo">TRILHA DE CSS</div>
+
+    <code>background-origin: content-box;</code> (padrão)
+
+    <div id="content-box" class="exemplo">TRILHA DE CSS</div>
+    <code>background-origin: content-box;</code> (padrão)
+
+    <div id="text" class="exemplo">TRILHA DE CSS</div>
+  </body>
+</html>

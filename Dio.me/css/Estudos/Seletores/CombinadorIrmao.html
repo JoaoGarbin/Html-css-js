@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /*
+        Combinador descendente [espaço]
+        Combinador filho (>)
+        Combinador irmão adjacente (+)
+        Combinador irmão em geral (~)
+        [seletor] [Combinador] [seletor] 
+        */
+
+      /*Pega o irmão adjacente da div*/
+      div + p {
+        color: blue;
+      }
+      /*Pega o irmão em geral da div*/
+      .fundo-verde ~ p {
+        background-color: aqua;
+      }
+
+      .fundo-azul + p {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fundo-verde">
+      <p>Parágrafo 1 dentro da div</p>
+      <p>Parágrafo 2 dentro da div</p>
+      <span>
+        <p>Parágrafo 3 dentro da div, dentro do span</p>
+      </span>
+    </div>
+
+    <p>Parágrafo 4, fora da div</p>
+    <p>Parágrafo 5, fora da div</p>
+
+    <div class="fundo-azul">
+      <p>Parágrafo 1 dentro da div</p>
+      <p>Parágrafo 2 dentro da div</p>
+      <span>
+        <p>Parágrafo 3 dentro da div, dentro do span</p>
+      </span>
+    </div>
+
+    <p>Parágrafo 4, fora da div</p>
+    <p>Parágrafo 5, fora da div</p>
+  </body>
+</html>

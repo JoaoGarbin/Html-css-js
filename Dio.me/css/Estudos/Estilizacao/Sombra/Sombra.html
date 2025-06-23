@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      border: 10px solid #8f382e;
+      margin: 20px auto;
+      background: #fa8072;
+    }
+    #exemplo1 {
+      box-shadow: 15px 15px 20px 10px black;
+    }
+    #exemplo2 {
+      box-shadow: inset 15px 15px 20px 10px orange;
+    }
+    #exemplo3 {
+      box-shadow: inset 15px 15px 10px 10px orange, 15px 15px 20px 10px black;
+    }
+    img {
+      width: 500px;
+      height: 200px;
+      margin: 20px auto;
+      object-fit: cover;
+      filter: drop-shadow(10px 10px 5px gray);
+      box-shadow: 10px 10px 5px black;
+    }
+    h2 {
+      color: aqua;
+      font-size: 40px;
+      text-align: center;
+      text-shadow: 10px 5px 5px gray;
+    }
+  </style>
+
+  <body>
+    <h1>Propriedade <code>box-shadow</code></h1>
+
+    <div id="exemplo1"></div>
+    <br />
+    <div id="exemplo2"></div>
+    <br />
+    <div id="exemplo3"></div>
+    <br />
+    <img
+      src="https://hermes.digitalinnovation.one/users/company/3a52d6e3-a58c-4755-89c9-fbc093a8868f.png"
+      alt=""
+    />
+    <h1>Propriedade <code>text-shadow</code></h1>
+    <h2>Bem-Vindo à Trilha CSS na DIO!</h2>
+  </body>
+</html>

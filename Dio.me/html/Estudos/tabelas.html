@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Trabalhando com Tabelas</title>
+
+    <style>
+      table {
+        -webkit-box-shadow: 14px 20px 25px 8px rgba(0, 0, 0, 0.83);
+        -moz-box-shadow: 14px 20px 25px 8px rgba(0, 0, 0, 0.83);
+        box-shadow: 14px 20px 25px 8px rgba(0, 0, 0, 0.83);
+      }
+      table thead th {
+        background-color: black;
+        color: white;
+      }
+      table tfoot td {
+        background-color: lightgray;
+      }
+      table tbody tr:nth-child(even) td {
+        background-color: #f1f1f1;
+      }
+      table tbody tr:hover td {
+        background-color: #e9e9e9;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      sumary="Esta tabela se refere as idades da Turma A da Dio."
+      width="250"
+      cellspacing="0"
+      cellpadding="0"
+      align="center"
+    >
+      <thead>
+        <tr>
+          <th colspan="2">Minha Tabela</th>
+        </tr>
+        <tr id="1">
+          <th title="Nome Completo">Nome</th>
+          <th title="Idade">Idade</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr id="2">
+          <td>Diogo</td>
+          <td>37</td>
+        </tr>
+        <tr id="3">
+          <td>João</td>
+          <td>18</td>
+        </tr>
+        <tr id="4">
+          <td>Marcos</td>
+          <td>56</td>
+        </tr>
+        <tr id="5">
+          <td>Maria</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>4</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

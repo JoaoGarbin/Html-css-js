@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .exemplo {
+      background-color: palevioletred;
+    }
+    .inline {
+      color: white;
+      height: 300px;
+    }
+    .inline-block {
+      display: inline-block;
+      width: 150px;
+
+      margin: 10px;
+      padding: 10px;
+    }
+    .menu {
+      background-color: plum;
+    }
+    .menu ul li {
+      display: inline-block;
+      padding: 10px 20px;
+    }
+    .menu ul li a {
+      text-decoration: none;
+      color: black;
+    }
+    .display-none {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <h1>Propriedade display</h1>
+
+    <p>
+      A propriedade display vai determinar como essas caixinhas retangulares
+      irão se comportar na hora de serem exibidas na tela.
+    </p>
+
+    <ul>
+      <li>border-width</li>
+      <li>border-style</li>
+      <li>Border-color</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+
+    <code>display:block;</code>
+    <br />
+    <div class="exemplo">Exemplo bloco 01</div>
+    <div class="exemplo">Exemplo bloco 02</div>
+
+    <br /><br />
+    <code>Display: inline;</code>
+    <br /><br />
+
+    <span class="exemplo inline">Exemplo inline 01</span>
+    <span class="exemplo">Exemplo inline 02</span>
+    <em class="exemplo">Exemplo inline 03</em>
+    <b class="exemplo">Exemplo inline 04</b>
+
+    <br /><br />
+    <code>Display: inline-block;</code>
+    <br /><br />
+
+    <span class="exemplo inline-block">Exemplo inline 01</span>
+    <em class="exemplo inline-block">Exemplo inline 02</em>
+    <b class="exemplo inline-block">Exemplo inline 03</b>
+    <span class="exemplo inline-block">Exemplo inline 04</span>
+    <em class="exemplo inline-block">Exemplo inline 05</em>
+    <b class="exemplo inline-block">Exemplo inline 06</b>
+
+    <br />
+
+    Lorem ipsum,
+    <b class="exemplo inline-block">dolor sit amet consectetur</b> adipisicing
+    elit. Cumque odit repudiandae corporis in, veniam eum aliquam blanditiis
+    animi voluptas, commodi dignissimos earum quaerat optio molestias
+    exercitationem! Harum tenetur cupiditate explicabo!
+
+    <br /><br /><br />
+    <h3>Menu de nav</h3>
+    <nav class="menu">
+      <ul>
+        <li href="#">Meu link 01</li>
+        <li href="#">Meu link 02</li>
+        <li href="#">Meu link 03</li>
+      </ul>
+    </nav>
+
+    <br /><br /><br />
+    <h3>Display none</h3>
+
+    <div class="exemplo display-none">Exemplo display none</div>
+  </body>
+</html>

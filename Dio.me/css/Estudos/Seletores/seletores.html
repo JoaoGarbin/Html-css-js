@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        font-weight: bold;
+      }
+
+      h1 {
+        background-color: darkblue;
+        color: lightgreen;
+      }
+
+      div {
+        background: lightblue;
+      }
+      .Seletores {
+        background-color: lightgreen;
+      }
+
+      .texto-maiusculo {
+        text-transform: uppercase;
+      }
+
+      #texto-boas-vindas {
+        color: white;
+      }
+      [class] {
+        color: darkblue;
+      }
+      [class="teste"] {
+        background-color: blueviolet;
+      }
+      /* Palavra Chave no começo com ifen na frente*/
+      [class|="explicacao"] {
+        margin: 40px;
+      }
+      /* Palavra Chave no começo com espaço na frente*/
+      [class~="Bem"] {
+        background-color: aqua;
+      }
+      /* Palavra Chave no começo*/
+      /*[class^=""] {}*/
+
+      /* Palavra Chave no Final*/
+      /*[class$=""] {}*/
+
+      /* Palavra Chave idempendente da posição*/
+      /*[class*=""] {}*/
+    </style>
+  </head>
+  <body>
+    <h1>Seletores CSS</h1>
+    <p id="texto-boas-vindas" class="Bem Vindo">Bem-Vindo!</p>
+    <p class="explicacao-seletores">No CSS nós possuimos os Seletores por ID</p>
+    <div>
+      <ul>
+        <li class="Seletores texto-maiusculo">
+          <b>Seletor por Tipo:</b> Busca elementos por uma tag Html
+        </li>
+        <li class="Seletores texto-maiusculo">
+          <b>Seletor por ID (#):</b> Busca elementos através do atributos "id"
+        </li>
+        <li class="Seletores">
+          <b>Seletr por Chave(.):</b> Busca elemetos através do atributo "class"
+        </li>
+        <li class="Seletores">
+          <b>Seletor Universal(*):</b> Seleciona todos os elementos HTML
+        </li>
+        <li class="SeletoresAtributos">
+          <b>Seletor de Atríbutos ([atrib]):</b> Seleciona elementos que possuem
+          um atributo específico em nosso documento HTML e conseguimos também
+          buscar atríbutos com um valor específico
+        </li>
+        <li class="teste">Teste de Atributo</li>
+      </ul>
+    </div>
+  </body>
+</html>
